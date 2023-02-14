@@ -5,26 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        fontFamily: {
+          sans: ["Graphik", "sans-serif"],
+          serif: ["Merriweather", "serif"],
+        },
+      };
+    </script>
     <title>Typography</title>
   </head>
   <body>
     <!-- Font Family -->
+    <div class="font-sans">tailwind is awesome!</div>
+    <div class="font-serif">tailwind is awesome!</div>
+    <div class="font-mono">tailwind is awesome!</div>
 
     <!-- Font Size -->
+    <div class="text-xs">tailwind is awesome</div>
+    <div class="text-sm">tailwind is awesome</div>
+    <div class="text-base">tailwind is awesome</div>
+    <div class="text-lg">tailwind is awesome</div>
+    <div class="text-xl">tailwind is awesome</div>
+    <div class="text-2xl">tailwind is awesome</div>
+    <div class="text-3xl">tailwind is awesome</div>
+    <!--xs: extra small-->
 
     <!-- Font Weight -->
+    <div class="font-light">tailwind is awesome</div>
+    <div class="font-normal">tailwind is awesome</div>
+    <div class="font-medium">tailwind is awesome</div>
+    <div class="font-semibold">tailwind is awesome</div>
+    <div class="font-bold">tailwind is awesome</div>
 
     <!-- Letter Spacing -->
+    <div class="tracking-tight">tailwind is awesome</div>
+    <div class="tracking-normal">tailwind is awesome</div>
+    <div class="tracking-wide">tailwind is awesome</div>
 
     <!-- Text Alignment -->
+    <div class="text-left">tailwind is awesome</div>
+    <div class="text-right">tailwind is awesome</div>
+    <div class="text-center">tailwind is awesome</div>
 
     <!-- Text Decoration -->
+    <div class="underline">tailwind is awesome</div>
+    <div class="underline decoration-4">tailwind is awesome</div>
+    <div class="underline decoration-4 decoration-blue-400">
+      tailwind is awesome
+    </div>
+    <div class="underline decoration-">tailwind is awesome</div>
+    <div class="underline decoration-dotted">tailwind is awesome</div>
+    <div class="underline decoration-dashed">tailwind is awesome</div>
+    <div class="underline decoration-wavy">tailwind is awesome</div>
 
     <!-- Decoration Style -->
 
     <!-- Decoration Offset -->
 
     <!-- Text Transform -->
+    <p class="normal-case">tailwind is awesome</p>
+    <p class="uppercase">tailwind is awesome</p>
+    <p class="lowercase">tailwind is awesome</p>
+    <p class="capitalize">tailwind is awesome</p>
   </body>
 </html>
 
