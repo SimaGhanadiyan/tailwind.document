@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
-        darkMood: "class",
-      };
-    </script>
+            tailwind.config = {
+                darkMode: "class"
+            };
+        </script>
     <style>
       .toggle-checkbox:checked {
         right: 0;
@@ -49,14 +49,15 @@
       ></label>
     </div>
     <script>
-      getElementById("toggle").addEventListener("change", function () {
-        if (this.checked) {
-          document.documentElement.classList.add("dark");
-        } else {
-          document.documentElement.classList.remove("dark");
-        }
-      });
-    </script>
+            const btn = document.getElementById("toggle");
+            btn.addEventListener("change", function () {
+                if (this.checked) {
+                    document.documentElement.classList.add("dark");
+                } else {
+                    document.documentElement.classList.remove("dark");
+                }
+            });
+        </script>
     <!-- By default, you can have your project use whatever mode your OS is using. You can use "dark:{class}". You can also set your config to use a class instead of using your OS mode -->
   </body>
 </html>
